@@ -6,8 +6,10 @@ Burp Suite のブラウザーが起動しない
 ## 起きた事(詳細)
 - Burp Suite 自体は起動する
 - "Open browser" ボタン押下しても何も起動しない(エラーが出るわけでもない)
-- "Help" メニュー内の "Health check for Burp's browser" を実行すると "Checking headless browser" の項目で Failed となる
-  - 再現できなくなってしまったので、エラーメッセージは不明
+- "Help" メニュー内の "Health check for Burp's browser" を実行すると "Checking headless browser" の項目で Error となる
+  - ```
+    net.portswigger.browser.Zi8: No dev tools websocket output from local chromium process 46316
+    ```
 
 ## 試みた事
 
